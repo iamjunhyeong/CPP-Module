@@ -6,7 +6,7 @@
 /*   By: junhyeop <junhyeop@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 23:39:16 by junhyeong         #+#    #+#             */
-/*   Updated: 2024/12/01 18:18:17 by junhyeop         ###   ########.fr       */
+/*   Updated: 2024/12/01 17:45:54 by junhyeop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,19 +19,7 @@
 
 int main()
 {
-
-	{
-		std::cout << "\033[33m" << "From PDF\n"<< "\033[0m";
-		const Animal* j = new Dog();
-		const Animal* i = new Cat();
-		
-		std::cout << std::endl;
-
-		delete j;//should not create a leak
-		delete i;
-	}
-
-	std::cout << std::endl;
+std::cout << std::endl;
 
 	{
 		std::cout << "\033[33m" << "From PDF array test\n"<< "\033[0m";
@@ -110,6 +98,5 @@ int main()
 
 		std::cout << std::endl;
 	}
-	while(1);
 	return 0;
 }

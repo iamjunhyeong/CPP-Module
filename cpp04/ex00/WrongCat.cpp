@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongCat.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: junhyeong <junhyeong@student.42.fr>        +#+  +:+       +#+        */
+/*   By: junhyeop <junhyeop@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 23:33:13 by junhyeong         #+#    #+#             */
-/*   Updated: 2024/11/30 23:41:41 by junhyeong        ###   ########.fr       */
+/*   Updated: 2024/12/01 18:21:49 by junhyeop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ WrongCat::WrongCat(const WrongCat &copy) : WrongAnimal(copy)
 
 WrongCat &WrongCat::operator=(const WrongCat &copy)
 {
+	std::cout << "WrongCat Assignation Operator" << std::endl;
 	if (this == &copy)
 		return *this;
 	WrongAnimal::operator=(copy);
-	std::cout << "WrongCat Assignation Operator" << std::endl;
 	return *this;
 }
 
@@ -44,5 +44,5 @@ WrongCat::~WrongCat()
 
 void WrongCat::makeSound() const
 {
-	std::cout << "WrongCat sound" << std::endl;
+	std::cout << "WrongCat Meow Meow" << std::endl;
 }

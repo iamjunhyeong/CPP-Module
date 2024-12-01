@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimal.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: junhyeong <junhyeong@student.42.fr>        +#+  +:+       +#+        */
+/*   By: junhyeop <junhyeop@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 23:31:59 by junhyeong         #+#    #+#             */
-/*   Updated: 2024/11/30 23:34:49 by junhyeong        ###   ########.fr       */
+/*   Updated: 2024/12/01 18:21:55 by junhyeop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,16 +24,16 @@ WrongAnimal::WrongAnimal(std::string type) : _type(type)
 
 WrongAnimal::WrongAnimal(const WrongAnimal &copy)
 {
-	*this = copy;
 	std::cout << "WrongAnimal Copy Constructor" << std::endl;
+	*this = copy;
 }
 
 WrongAnimal &WrongAnimal::operator=(const WrongAnimal &copy)
 {
+	std::cout << "WrongAnimal Assignation Operator" << std::endl;
 	if (this == &copy)
 		return *this;
 	_type = copy._type;
-	std::cout << "WrongAnimal Assignation Operator" << std::endl;
 	return *this;
 }
 
@@ -49,5 +49,5 @@ std::string WrongAnimal::getType() const
 
 void WrongAnimal::makeSound() const
 {
-	std::cout << "WrongAnimal sound" << std::endl;
+	std::cout << "WrongAnimal could make several different sounds" << std::endl;
 }

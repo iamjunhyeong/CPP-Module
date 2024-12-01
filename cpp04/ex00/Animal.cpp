@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: junhyeong <junhyeong@student.42.fr>        +#+  +:+       +#+        */
+/*   By: junhyeop <junhyeop@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 23:23:59 by junhyeong         #+#    #+#             */
-/*   Updated: 2024/11/30 23:52:44 by junhyeong        ###   ########.fr       */
+/*   Updated: 2024/12/01 18:21:44 by junhyeop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,10 @@ Animal::Animal(const Animal &copy) : _type(copy._type)
 
 Animal &Animal::operator=(const Animal &copy)
 {
+	std::cout << "Animal Assignation Operator" << std::endl;
 	if (this == &copy)
 		return *this;
 	_type = copy._type;
-	std::cout << "Animal Assignation Operator" << std::endl;
 	return *this;
 }
 
@@ -48,5 +48,5 @@ std::string Animal::getType() const
 
 void Animal::makeSound() const
 {
-	std::cout << "Animal sound" << std::endl;
+	std::cout << "Animal could make several different sounds" << std::endl;
 }

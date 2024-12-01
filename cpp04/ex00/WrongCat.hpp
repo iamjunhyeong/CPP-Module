@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: junhyeong <junhyeong@student.42.fr>        +#+  +:+       +#+        */
+/*   By: junhyeop <junhyeop@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 23:33:04 by junhyeong         #+#    #+#             */
-/*   Updated: 2024/11/30 23:33:12 by junhyeong        ###   ########.fr       */
+/*   Updated: 2024/12/01 17:53:07 by junhyeop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class WrongCat : public WrongAnimal
 		WrongCat &operator=(const WrongCat &copy);
 		virtual ~WrongCat();
 		
-		virtual void makeSound() const;
+		void makeSound() const;
 };
 
 #endif

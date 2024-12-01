@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: junhyeong <junhyeong@student.42.fr>        +#+  +:+       +#+        */
+/*   By: junhyeop <junhyeop@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 23:30:16 by junhyeong         #+#    #+#             */
-/*   Updated: 2024/11/30 23:41:27 by junhyeong        ###   ########.fr       */
+/*   Updated: 2024/12/01 18:21:26 by junhyeop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,10 @@ Dog::Dog(const Dog &copy) : Animal(copy)
 
 Dog &Dog::operator=(const Dog &copy)
 {
+	std::cout << "Dog Assignation Operator" << std::endl;
 	if (this == &copy)
 		return *this;
 	Animal::operator=(copy);
-	std::cout << "Dog Assignation Operator" << std::endl;
 	return *this;
 }
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: junhyeong <junhyeong@student.42.fr>        +#+  +:+       +#+        */
+/*   By: junhyeop <junhyeop@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 23:25:20 by junhyeong         #+#    #+#             */
-/*   Updated: 2024/11/30 23:40:56 by junhyeong        ###   ########.fr       */
+/*   Updated: 2024/12/01 18:21:39 by junhyeop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,22 +19,22 @@ Cat::Cat() : Animal("Cat")
 
 Cat::Cat(std::string &type) : Animal(type)
 {
-	_type = type;
 	std::cout << "Cat Type Constructor" << std::endl;
+	_type = type;
 }
 
 Cat::Cat(const Cat &copy) : Animal(copy)
 {
-	*this = copy;
 	std::cout << "Cat Copy Constructor" << std::endl;
+	*this = copy;
 }
 
 Cat &Cat::operator=(const Cat &copy)
 {
+	std::cout << "Cat Assignation Operator" << std::endl;
 	if (this == &copy)
 		return *this;
 	Animal::operator=(copy);
-	std::cout << "Cat Assignation Operator" << std::endl;
 	return *this;
 }
 
