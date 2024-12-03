@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: junhyeong <junhyeong@student.42.fr>        +#+  +:+       +#+        */
+/*   By: junhyeop <junhyeop@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 23:20:39 by junhyeong         #+#    #+#             */
-/*   Updated: 2024/12/01 00:52:40 by junhyeong        ###   ########.fr       */
+/*   Updated: 2024/12/03 18:35:49 by junhyeop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class Animal
 		virtual ~Animal();
 		
 		std::string getType() const;
-		virtual void makeSound() const;
+		virtual void makeSound() const = 0;
 };
 
 #endif

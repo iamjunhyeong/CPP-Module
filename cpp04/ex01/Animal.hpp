@@ -6,7 +6,7 @@
 /*   By: junhyeop <junhyeop@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 23:20:39 by junhyeong         #+#    #+#             */
-/*   Updated: 2024/12/01 17:42:44 by junhyeop         ###   ########.fr       */
+/*   Updated: 2024/12/03 18:39:02 by junhyeop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class Animal
 		virtual ~Animal();
 
 		std::string getType() const;
-		virtual void makeSound() const = 0;
+		virtual void makeSound() const;
 };
 
 #endif

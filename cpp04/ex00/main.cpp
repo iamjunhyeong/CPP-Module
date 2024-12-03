@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: junhyeong <junhyeong@student.42.fr>        +#+  +:+       +#+        */
+/*   By: junhyeop <junhyeop@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 23:39:16 by junhyeong         #+#    #+#             */
-/*   Updated: 2024/11/30 23:39:19 by junhyeong        ###   ########.fr       */
+/*   Updated: 2024/12/03 18:28:17 by junhyeop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ int main()
 		std::cout << "\033[33m" << "From PDF\n"<< "\033[0m";
 		const Animal* meta = new Animal();
 		const Animal* j = new Dog();
-		
 		const Animal* i = new Cat();
 		std::cout << j->getType() << " " << std::endl;
 		std::cout << i->getType() << " " << std::endl;
